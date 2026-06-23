@@ -197,7 +197,7 @@ class AppState extends ChangeNotifier {
       );
     }
 
-    // Atomic mutation block for principal and fee routing.
+    // Single-threaded in-memory mutation block for principal and fee routing.
     source.balance = _normalizeCurrency(source.balance - totalDeduction);
     recipient.balance = _normalizeCurrency(recipient.balance + normalizedAmount);
     if (fee > 0) {

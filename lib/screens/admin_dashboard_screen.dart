@@ -13,11 +13,11 @@ class AdminDashboardScreen extends StatefulWidget {
 }
 
 class _AdminDashboardScreenState extends State<AdminDashboardScreen> {
-  final _searchController = TextEditingController();
+  final _accountSearchController = TextEditingController();
 
   @override
   void dispose() {
-    _searchController.dispose();
+    _accountSearchController.dispose();
     super.dispose();
   }
 
@@ -40,7 +40,7 @@ class _AdminDashboardScreenState extends State<AdminDashboardScreen> {
       ),
       body: Consumer<AppState>(
         builder: (_, state, __) {
-          final q = _searchController.text.toLowerCase();
+          final q = _accountSearchController.text.toLowerCase();
           final accounts = [...state.citizens, ...state.corporates]
               .where((a) => a.id.toLowerCase().contains(q) || a.displayName.toLowerCase().contains(q))
               .toList();
@@ -57,7 +57,7 @@ class _AdminDashboardScreenState extends State<AdminDashboardScreen> {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 12),
                 child: TextField(
-                  controller: _searchController,
+                  controller: _accountSearchController,
                   decoration: const InputDecoration(labelText: 'Search accounts', prefixIcon: Icon(Icons.search)),
                   onChanged: (_) => setState(() {}),
                 ),
