@@ -9,11 +9,7 @@ Flutter mobile app prototype for Missouri Boys/Girls State digital currency oper
 - Corporate outgoing transfers apply a 5% fee routed atomically to admin (`000000`)
 - Local mocked database with seed data
 - NFC payment workflow using `nfc_manager`
-- Messaging, transfer, dashboard, admin ledger, and transaction history screens
-
-## Admin Credentials
-- ID: `000000`
-- Password: `181O85J$`
+- Messaging, transfer, dashboard, admin ledger, and transaction history screen
 
 ## Seed Citizen Credentials
 - IDs: `100001`, `100002`, `100003`
