@@ -1,0 +1,3 @@
+[submodule "flutterby"]
+	path = flutterby
+	url = https://github.com/oodavid/flutterby.git
