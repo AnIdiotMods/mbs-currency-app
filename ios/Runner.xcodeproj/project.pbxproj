@@ -281,7 +281,7 @@
 		97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				97C14700CF9000F007C117D /* LaunchScreen.storyboard */,
+				97C147001CF9000F007C117D /* LaunchScreen.storyboard */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -374,7 +374,7 @@
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_IVAR_ACCESS = YES;
-				CLANG_WARN_EMPTY_1 = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
