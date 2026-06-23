@@ -22,7 +22,6 @@ digital currency platform.  Supports **iOS 14+** and **Android 5.0+ (API 21+)**.
 
 | Role | ID | Password |
 |---|---|---|
-| Admin | `000000` | `181O85J$` |
 | Citizen 1 (Federalist) | `100001` | `password123` |
 | Citizen 2 (Nationalist) | `100002` | `password123` |
 | Citizen 3 (incomplete profile) | `100003` | `password123` |
