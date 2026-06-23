@@ -19,6 +19,8 @@ Release Artifacts** → **Run workflow**.
 
 ## Notes
 
-- The Android APK is signed with the debug keystore and can be side-loaded on any device.
+- The Android APK is signed with the **debug keystore** and is intended for
+  testing/side-loading only. For production distribution, configure proper
+  release signing with secure key management.
 - The iOS IPA is unsigned. To install on a device you need to re-sign it with a
   valid provisioning profile using Xcode or a third-party tool.
