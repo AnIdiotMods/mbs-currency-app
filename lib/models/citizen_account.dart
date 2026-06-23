@@ -4,7 +4,7 @@ import 'enums.dart';
 class CitizenAccount extends Account {
   CitizenAccount({
     required super.id,
-    required this.password,
+    this.password,
     required this.name,
     required this.city,
     required this.programType,
@@ -15,7 +15,7 @@ class CitizenAccount extends Account {
     required this.isProfileComplete,
   }) : super(accountType: AccountType.personal, displayName: name);
 
-  final String password;
+  final String? password;
   String name;
   String city;
   ProgramType programType;

@@ -93,6 +93,36 @@ class AppState extends ChangeNotifier {
     return true;
   }
 
+  bool registerAccount({
+    required String id,
+    required String password,
+  }) {
+    // Check if account already exists
+    if (_db.citizens.containsKey(id)) {
+      return false;
+    }
+
+    // Create new account with provided password
+    _db.citizens[id] = CitizenAccount(
+      id: id,
+      password: password,
+      name: '',
+      city: '',
+      programType: ProgramType.mbs,
+      partyAffiliation: PartyAffiliation.federalist,
+      profilePicture: null,
+      balance: 0,
+      createdAt: DateTime.now(),
+      isProfileComplete: false,
+    );
+
+    // Auto-login after registration
+    _currentUserId = id;
+    _db.persistedSessionAccountId = id;
+    notifyListeners();
+    return true;
+  }
+
   void logout() {
     _currentUserId = null;
     _useCorporateMode = false;
