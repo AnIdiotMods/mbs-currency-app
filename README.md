@@ -1,8 +1,10 @@
-# MBS Currency App
+I'm# MBS Currency App
 
 A production-ready Flutter mobile app for the Missouri Boys/Girls State (MBS/MGS)
 digital currency platform.  Supports **iOS 14+** and **Android 5.0+ (API 21+)**.
 
+
+##AI was used for compilation and testing of code, as all of the code was created on a mobile phone 
 ---
 
 ## Features
